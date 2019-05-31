@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
 
-  <title>LoTR Rock, Paper, Scissors</title>
+  <title>Rock, Paper, Scissors</title>
 </head>
+
 <body>
   <!-- HEADER  -->
   <header>
-    <h1 id="title">Hobbit | Nazgûl  | Sauron</h1>
+    <h1 id="title">Rock | Paper | Scissors</h1>
   </header>
   <!-- SCOREBOARD -->
   <div class="score-board">
-      <div id="user" class="label">You</div>
-      <div id="comp" class="label">Enemy</div>
+    <div id="user" class="label">You</div>
+    <div id="comp" class="label">Comp</div>
     <span id="user-score">0</span>:<span id="comp-score">0</span>
   </div>
 
@@ -28,29 +30,31 @@
     <p></p>
   </div>
   <div class="results">
-    <p>Press A Button To Determine The Fate Of Middle Earth</p>
+    <p>Press A Button To Begin!</p>
   </div>
 
   <!-- CHOICES -->
   <div class="choices">
-    <div class="choice jello-vertical" id="hobbit">
-      <img src="./images/hobbit.jpg" alt="hobbit">
+    <div class="choice jello-vertical" id="rock">
+      <img src="./images/rock.png" alt="rock">
     </div>
-    <div class="choice" id="nazgul">
-     <img src="./images/nazgul.jpg" alt="orc">
+    <div class="choice" id="paper">
+      <img src="./images/paper.png" alt="paper">
     </div>
-    <div class="choice" id="sauron">
-      <img src="./images/tower.jpg" alt="eye of Sauron">
+    <div class="choice" id="scissors">
+      <img src="./images/scissors.png" alt="scissors">
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>I may like LotR too much</p>
-    <!-- <button class="reset">Reset?</button>  -->
-  </footer>
+  <!-- RESET-->
+  <div class="reset-button">
+    <button class="reset">Reset Game</button>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.js"
+    integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8=" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
+
 </html>
